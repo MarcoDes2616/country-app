@@ -1,7 +1,8 @@
 const express = require('express');
+const countriesRouter = require('./countries.routes');
 const router = express.Router();
 
-// colocar las rutas aquí
+router.use("/api/v1", countriesRouter)
 
 
 module.exports = router;
